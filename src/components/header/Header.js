@@ -69,7 +69,7 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Experience
+                  Experience & Projects
                 </NavLink>
               </li>
               <li>
@@ -81,7 +81,7 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Projects
+                  Publications & OSS Projects
                 </NavLink>
               </li>
               <li>
@@ -93,7 +93,7 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Open Source
+                  Open Source contributions
                 </NavLink>
               </li>
               <li>

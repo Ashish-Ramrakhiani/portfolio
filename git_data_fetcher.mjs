@@ -252,6 +252,7 @@ const languages_icons = {
   CSS: "logos-css-3",
   JavaScript: "logos-javascript",
   "C#": "logos-c-sharp",
+  R: "simple-icons:r",
   Java: "logos-java",
   Shell: "simple-icons:shell",
   Ruby: "logos:ruby",

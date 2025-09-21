@@ -67,7 +67,7 @@ const socialMediaLinks = [
   {
     name: "Phone",
     link: "tel:+15412862203",
-    fontAwesomeIcon: "fa-phone",
+    fontAwesomeIcon: "fas fa-phone",
     backgroundColor: "#4CAF50",
   },
 ];
@@ -78,10 +78,10 @@ const skills = {
       title: "Languages & Frameworks",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Proficient in multiple programming languages including Java, Python, JavaScript, TypeScript, and C++",
-        "⚡ Experience with modern frameworks like React, Node.js, Express.js, Spring Boot, and Next.js",
+        "⚡ Proficient in multiple programming languages including Java, Python, JavaScript, TypeScript, SAP ABAP, C++, C#, and R",
+        "⚡ Experience with modern frameworks like React, Redux, Node.js, Express.js, Spring Boot, Next.js, and Bootstrap",
         "⚡ Mobile development with Flutter and Android, plus web technologies like HTML, CSS, and PHP",
-        "⚡ Specialized in SAP ABAP for enterprise applications and R for statistical computing",
+        "⚡ Database expertise with SQL and specialized in enterprise applications with SAP ABAP",
       ],
       softwareSkills: [
         {
@@ -92,6 +92,11 @@ const skills = {
         {
           skillName: "Python",
           fontAwesomeClassname: "ion-logo-python",
+          style: { color: "#3776AB" },
+        },
+        {
+          skillName: "R",
+          fontAwesomeClassname: "simple-icons:r",
           style: { color: "#3776AB" },
         },
         {
@@ -115,8 +120,8 @@ const skills = {
           style: { color: "#339933" },
         },
         {
-          skillName: "Spring",
-          fontAwesomeClassname: "simple-icons:spring",
+          skillName: "Spring Boot",
+          fontAwesomeClassname: "simple-icons:springboot",
           style: { color: "#6DB33F" },
         },
         {
@@ -130,10 +135,10 @@ const skills = {
       title: "Backend & Development Tools",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Building robust REST APIs and GraphQL services with comprehensive authentication",
-        "⚡ Experience with Spring Boot, Hibernate, JPA for enterprise-grade backend development",
-        "⚡ CI/CD pipeline setup with Git, GitHub Actions, Jenkins, and Docker containerization",
-        "⚡ WebSocket implementation for real-time applications and microservices architecture",
+        "⚡ Building robust REST APIs and GraphQL services with comprehensive authentication using Spring Framework and Spring Boot",
+        "⚡ Experience with Hibernate, JPA for enterprise-grade backend development and WebSocket implementation",
+        "⚡ CI/CD pipeline setup with Git, GitHub Actions, Jenkins, Vercel, and Docker containerization",
+        "⚡ OAuth 2.0 and JWT authentication systems for secure microservices architecture",
       ],
       softwareSkills: [
         {
@@ -172,10 +177,10 @@ const skills = {
       title: "Data & Machine Learning",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Advanced machine learning with Scikit-learn, TensorFlow for deep learning applications",
-        "⚡ Specialized in genetic programming, sentiment analysis, and unsupervised learning techniques",
-        "⚡ Database management with MongoDB, MySQL, Oracle, and modern data tools like Snowflake",
-        "⚡ Data pipeline orchestration with Apache Airflow and visualization with Tableau",
+        "⚡ Advanced machine learning with Scikit-learn, TensorFlow for deep learning and genetic programming applications",
+        "⚡ Specialized in sentiment analysis, unsupervised learning techniques, and real-time data analysis",
+        "⚡ Database management with MongoDB, MySQL, Oracle, Snowflake, and modern data tools like DBT",
+        "⚡ Data pipeline orchestration with Apache Airflow and visualization with Tableau and Sigma",
       ],
       softwareSkills: [
         {
@@ -215,9 +220,9 @@ const skills = {
       fileName: "DesignImg",
       skills: [
         "⚡ Multi-cloud expertise with AWS (S3, Lambda, EC2, RDS), GCP, Azure for scalable deployments",
-        "⚡ Serverless computing with OpenWhisk, SLURM, and container orchestration platforms",
-        "⚡ SAP enterprise systems including MDG, HANA, Fiori/UI5, and Webdynpro development",
-        "⚡ Security best practices with OWASP principles, monitoring with ELK Stack, and Agile methodologies",
+        "⚡ Serverless computing with OpenWhisk, SLURM, MinIO, and container orchestration platforms",
+        "⚡ SAP enterprise systems including MDG, HANA, Fiori/UI5, Webdynpro, OData, CDS Views, and BRF+",
+        "⚡ Agile/Scrum methodologies, Unit Testing (JUnit, Mockito), System Design, and OWASP security principles",
       ],
       softwareSkills: [
         {
@@ -310,13 +315,13 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work, Research and Entrepreneurship",
+  subtitle: "Professional Work, Projects, Research and Entrepreneurship",
   description:
     "I have extensive experience in enterprise software development, research, and entrepreneurship. My work spans from optimizing large-scale SAP systems to developing cutting-edge research in fault localization and building successful startups.",
   header_image_path: "experience.svg",
   sections: [
     {
-      title: "Work",
+      title: "Professional Work",
       work: true,
       experiences: [
         {
@@ -366,20 +371,96 @@ const experience = {
         },
       ],
     },
-    
     {
-      title: "Research & Academic",
+      title: "Projects",
       experiences: [
         {
-          title: "Graduate Research Assistant",
-          company: "Oregon State University",
-          company_url: "https://oregonstate.edu/",
-          logo_path: "osu_logo.png",
-          duration: "Sept 2023 - Present",
-          location: "Corvallis, OR, USA",
+          title: "FaaSr: Multi-Cloud Serverless Orchestration Framework",
+          company: "FaaSr",
+          company_url: "https://github.com/FaaSr/",
+          logo_path: "faasr_logo.png",
+          duration: "Sept 2024 - Present",
+          location: "Corvallis, Oregon",
           description:
-            "Conducting research in Bug Localization and Serverless Frameworks. Developed BugSleuth - an unsupervised bug localization technique using genetic programming with real-time debugging capabilities. Architected FaaSr - a production-grade serverless middleware framework for multi-cloud deployment. Research has resulted in publications and practical applications in industry.",
-          color: "#DC6900",
+            "Architected and developed a production-grade serverless middleware framework that abstracts multi-cloud complexity through DAG-based workflow orchestration, enabling seamless deployment across 5+ cloud platforms (AWS Lambda, GCP Cloud Run, GitHub Actions, OpenWhisk, SLURM HPC). Engineered robust authentication systems with JWT token validation and OAuth 2.0 flows, designed fault-tolerant RPC architecture with automated retry mechanisms, and built comprehensive CI/CD pipelines with automated Docker containerization. Implemented intelligent workflow validation, dependency management, and real-time monitoring systems, reducing deployment complexity by 80% while maintaining enterprise-grade security and scalability standards.",
+          color: "#4285F4",
+        },
+        {
+          title: "BugSleuth: Unsupervised Bug Localization",
+          company: "Research Project",
+          company_url: "https://www.github.com/Ashish-Ramrakhiani/BugLocalization_BugSleuth",
+          logo_path: "bugsleuth_logo.png",
+          duration: "January 2024 - February 2025",
+          location: "Corvallis, Oregon",
+          description:
+            "Developed an unsupervised bug localization technique using genetic programming, achieving real-time debugging with millisecond runtime and localizing 56% of bugs from 704 real-world projects in the top-5 ranked suspicious statements, surpassing state-of-the-art methods. This research contributes to advancing automated debugging techniques in software engineering.",
+          color: "#FF5722",
+        },
+        {
+          title: "AI-Powered Stock Tracking & Alert System",
+          company: "Personal Project",
+          company_url: "https://www.github.com/Ashish-Ramrakhiani/stock-tracker-agent",
+          logo_path: "stock_tracker_logo.jpg",
+          duration: "2025",
+          location: "Remote",
+          description:
+            "Architected and deployed a comprehensive real-time stock monitoring system integrating AI-driven market analysis with automated SMS notifications. Built multi-agent architecture using OpenAI's Agents SDK for natural language command processing, intelligent news research, and contextual alert generation. Implemented 24/7 background scheduling for hourly price monitoring across global exchanges, REST webhook endpoints for Twilio SMS integration, and persistent JSON-based data management. Achieved seamless user interaction through conversational SMS commands and deployed scalable cloud infrastructure supporting continuous operation.",
+          color: "#2196F3",
+        },
+        {
+          title: "College Recommendation System",
+          company: "Academic Project",
+          company_url: "",
+          logo_path: "college_rec_logo.png",
+          duration: "2018 - 2019",
+          location: "Mumbai, India",
+          description:
+            "Developed a mobile app with Flutter for recommending engineering colleges based on user profiles. Implemented a Python-based web scraper using BeautifulSoup and a recommendation algorithm with Random Forest, achieving 97.89% recommendation accuracy. The system provides personalized college suggestions to help students make informed decisions about their higher education.",
+          color: "#9C27B0",
+        },
+        {
+          title: "VivaMind: Mental Health & Wellness Tracker",
+          company: "Startup Project",
+          company_url: "",
+          logo_path: "vivamind_logo.png",
+          duration: "May 2020 - Aug 2022",
+          location: "Remote",
+          description:
+            "Engineered a full-stack wellness tracking platform on the MERN stack, architected with modular microservices for journaling, sentiment analysis, and analytics. Designed and deployed a pipeline for real-time sentiment analysis of journal entries, integrated with Node.js APIs to personalize insights for users. Built and optimized a secure backend with MongoDB, role-based access, and JWT/OAuth 2.0, ensuring privacy and reliability in handling sensitive personal data. Deployed services using Docker and CI/CD pipelines for scalable cloud delivery.",
+          color: "#4CAF50",
+        },
+        {
+          title: "Automated Wetland Delineation (ISRO)",
+          company: "Indian Space Research Organization",
+          company_url: "https://www.isro.gov.in/",
+          logo_path: "isro_logo.png",
+          duration: "June 2019 - July 2019",
+          location: "Ahmedabad, India",
+          description:
+            "Directed deep learning project at ISRO for mapping wetlands using hyperspectral LISS-III imagery. Designed an atrous CNN that outperformed U-Net, reducing parameters by 100×. Achieved Dice coefficients of 0.68 (train) and 0.65 (validation). Reduced manual delineation effort by 80%, used as a QC tool at ISRO.",
+          color: "#FF6B35",
+        },
+        {
+          title: "SAP Material Management Workflow Optimization",
+          company: "Colgate Global Business Services",
+          company_url: "https://www.colgatepalmolive.com/",
+          logo_path: "colgate_logo.png",
+          duration: "2020 - 2021",
+          location: "Mumbai, India",
+          description:
+            "Redesigned SAP Material Management workflows using parallel processing and milestone tracking. Identified process bottlenecks and KPIs, achieving a 70% improvement in material creation efficiency. Demonstrated expertise in enterprise workflow automation and KPI-driven performance improvements.",
+          color: "#FF0000",
+        },
+        {
+          title: "Finance Master Data Automation",
+          company: "Colgate Global Business Services",
+          company_url: "https://www.colgatepalmolive.com/",
+          logo_path: "colgate_logo.png",
+          duration: "2021 - 2022",
+          location: "Mumbai, India",
+          description:
+            "Automated finance master data load process by replacing legacy file transfers with a secure Webdynpro application. Reduced data load time from 8 hours to a few minutes. Leveraged SAP HANA and OData services to deliver real-time data flows with enterprise-grade security.",
+          color: "#FF0000",
         },
       ],
     },
@@ -396,6 +477,22 @@ const experience = {
           description:
             "Engineered a full-stack wellness tracking platform on MERN stack with modular microservices. Designed real-time sentiment analysis pipeline for journal entries. Built secure backend with MongoDB, role-based access, and JWT/OAuth 2.0. Deployed using Docker and CI/CD pipelines for scalable cloud delivery with rapid iteration capabilities.",
           color: "#4CAF50",
+        },
+      ],
+    },
+    {
+      title: "Research & Academic",
+      experiences: [
+        {
+          title: "Graduate Research Assistant",
+          company: "Oregon State University",
+          company_url: "https://oregonstate.edu/",
+          logo_path: "osu_logo.png",
+          duration: "Sept 2023 - Present",
+          location: "Corvallis, OR, USA",
+          description:
+            "Conducting research in Bug Localization and Serverless Frameworks. Developed BugSleuth - an unsupervised bug localization technique using genetic programming with real-time debugging capabilities. Architected FaaSr - a production-grade serverless middleware framework for multi-cloud deployment. Research has resulted in publications and practical applications in industry.",
+          color: "#DC6900",
         },
       ],
     },
@@ -416,216 +513,6 @@ const publicationsHeader = {
   avatar_image_path: "projects_image.svg",
 };
 
-// Projects Section
-const projects = {
-  data: [
-    {
-      id: "faasr-framework",
-      name: "FaaSr: Multi-Cloud Serverless Orchestration Framework",
-      url: "",
-      description: "Architected and developed a production-grade serverless middleware framework that abstracts multi-cloud complexity through DAG-based workflow orchestration, enabling seamless deployment across 5+ cloud platforms (AWS Lambda, GCP Cloud Run, GitHub Actions, OpenWhisk, SLURM HPC). Engineered robust authentication systems with JWT token validation and OAuth 2.0 flows, designed fault-tolerant RPC architecture with automated retry mechanisms, and built comprehensive CI/CD pipelines with automated Docker containerization. Implemented intelligent workflow validation, dependency management, and real-time monitoring systems, reducing deployment complexity by 80% while maintaining enterprise-grade security and scalability standards.",
-      languages: [
-        {
-          name: "Python",
-          iconifyClass: "logos-python",
-        },
-        {
-          name: "Docker",
-          iconifyClass: "logos-docker-icon",
-        },
-        {
-          name: "FastAPI",
-          iconifyClass: "logos-fastapi",
-        },
-        {
-          name: "AWS",
-          iconifyClass: "logos-aws",
-        },
-        {
-          name: "GCP",
-          iconifyClass: "logos-google-cloud",
-        },
-      ],
-    },
-    {
-      id: "bugsleuth",
-      name: "BugSleuth: Unsupervised Bug Localization",
-      url: "",
-      description: "Developed an unsupervised bug localization technique using genetic programming, achieving real-time debugging with millisecond runtime and localizing 56% of bugs from 704 real-world projects in the top-5 ranked suspicious statements, surpassing state-of-the-art methods. This research contributes to advancing automated debugging techniques in software engineering.",
-      languages: [
-        {
-          name: "Genetic Programming",
-          iconifyClass: "carbon-ai-research",
-        },
-        {
-          name: "Java",
-          iconifyClass: "logos-java",
-        },
-        {
-          name: "Machine Learning",
-          iconifyClass: "carbon-machine-learning-model",
-        },
-      ],
-    },
-    {
-      id: "ai-stock-tracker",
-      name: "AI-Powered Stock Tracking & Alert System",
-      url: "",
-      description: "Architected and deployed a comprehensive real-time stock monitoring system integrating AI-driven market analysis with automated SMS notifications. Built multi-agent architecture using OpenAI's Agents SDK for natural language command processing, intelligent news research, and contextual alert generation. Implemented 24/7 background scheduling for hourly price monitoring across global exchanges, REST webhook endpoints for Twilio SMS integration, and persistent JSON-based data management. Achieved seamless user interaction through conversational SMS commands and deployed scalable cloud infrastructure supporting continuous operation.",
-      languages: [
-        {
-          name: "FastAPI",
-          iconifyClass: "logos-fastapi",
-        },
-        {
-          name: "OpenAI",
-          iconifyClass: "simple-icons:openai",
-        },
-        {
-          name: "Twilio",
-          iconifyClass: "logos-twilio",
-        },
-        {
-          name: "Docker",
-          iconifyClass: "logos-docker-icon",
-        },
-        {
-          name: "Microservices",
-          iconifyClass: "carbon-microservices-1",
-        },
-      ],
-    },
-    {
-      id: "college-recommendation",
-      name: "College Recommendation System",
-      url: "",
-      description: "Developed a mobile app with Flutter for recommending engineering colleges based on user profiles. Implemented a Python-based web scraper using BeautifulSoup and a recommendation algorithm with Random Forest, achieving 97.89% recommendation accuracy. The system provides personalized college suggestions to help students make informed decisions about their higher education.",
-      languages: [
-        {
-          name: "Flutter",
-          iconifyClass: "logos-flutter",
-        },
-        {
-          name: "Python",
-          iconifyClass: "logos-python",
-        },
-        {
-          name: "BeautifulSoup",
-          iconifyClass: "simple-icons:python",
-        },
-        {
-          name: "Machine Learning",
-          iconifyClass: "carbon-machine-learning-model",
-        },
-      ],
-    },
-    {
-      id: "viva-mind",
-      name: "VivaMind: Mental Health & Wellness Tracker",
-      url: "",
-      description: "Engineered a full-stack wellness tracking platform on the MERN stack, architected with modular microservices for journaling, sentiment analysis, and analytics. Designed and deployed a pipeline for real-time sentiment analysis of journal entries, integrated with Node.js APIs to personalize insights for users. Built and optimized a secure backend with MongoDB, role-based access, and JWT/OAuth 2.0, ensuring privacy and reliability in handling sensitive personal data. Deployed services using Docker and CI/CD pipelines for scalable cloud delivery.",
-      languages: [
-        {
-          name: "React",
-          iconifyClass: "logos-react",
-        },
-        {
-          name: "Node.js",
-          iconifyClass: "logos-nodejs",
-        },
-        {
-          name: "MongoDB",
-          iconifyClass: "logos-mongodb",
-        },
-        {
-          name: "Express.js",
-          iconifyClass: "simple-icons:express",
-        },
-        {
-          name: "Docker",
-          iconifyClass: "logos-docker-icon",
-        },
-      ],
-    },
-    {
-      id: "wetland-delineation-isro",
-      name: "Automated Wetland Delineation (ISRO)",
-      url: "",
-      description: "Directed deep learning project at ISRO for mapping wetlands using hyperspectral LISS-III imagery. Designed an atrous CNN that outperformed U-Net, reducing parameters by 100×. Achieved Dice coefficients of 0.68 (train) and 0.65 (validation). Reduced manual delineation effort by 80%, used as a QC tool at ISRO.",
-      languages: [
-        {
-          name: "Deep Learning",
-          iconifyClass: "carbon-ai-research",
-        },
-        {
-          name: "Python",
-          iconifyClass: "logos-python",
-        },
-        {
-          name: "Computer Vision",
-          iconifyClass: "carbon-view",
-        },
-        {
-          name: "Data Science",
-          iconifyClass: "carbon-data-science",
-        },
-      ],
-    },
-    {
-      id: "sap-workflow-optimization",
-      name: "SAP Material Management Workflow Optimization",
-      url: "",
-      description: "Redesigned SAP Material Management workflows using parallel processing and milestone tracking. Identified process bottlenecks and KPIs, achieving a 70% improvement in material creation efficiency. Demonstrated expertise in enterprise workflow automation and KPI-driven performance improvements.",
-      languages: [
-        {
-          name: "SAP",
-          iconifyClass: "simple-icons:sap",
-        },
-        {
-          name: "Workflow Automation",
-          iconifyClass: "carbon-workflow-automation",
-        },
-        {
-          name: "Process Optimization",
-          iconifyClass: "carbon-process-automate",
-        },
-        {
-          name: "Enterprise IT",
-          iconifyClass: "carbon-enterprise",
-        },
-      ],
-    },
-    {
-      id: "finance-master-data-automation",
-      name: "Finance Master Data Automation",
-      url: "",
-      description: "Automated finance master data load process by replacing legacy file transfers with a secure Webdynpro application. Reduced data load time from 8 hours to a few minutes. Leveraged SAP HANA and OData services to deliver real-time data flows with enterprise-grade security.",
-      languages: [
-        {
-          name: "SAP HANA",
-          iconifyClass: "simple-icons:sap",
-        },
-        {
-          name: "Webdynpro",
-          iconifyClass: "simple-icons:sap",
-        },
-        {
-          name: "OData",
-          iconifyClass: "carbon-api",
-        },
-        {
-          name: "REST APIs",
-          iconifyClass: "carbon-api-1",
-        },
-        {
-          name: "Data Engineering",
-          iconifyClass: "carbon-data-enrichment",
-        },
-      ],
-    },
-  ],
-};
-
 const publications = {
   data: [
     {
@@ -633,14 +520,14 @@ const publications = {
       name: "FaaSr: Multi-Cloud Serverless Orchestration Framework",
       createdAt: "2025-09-01T00:00:00Z",
       description: "Pending research publication on production-grade serverless middleware framework",
-      url: "",
+      url: "https://github.com/FaaSr/",
     },
     {
       id: "bugsleuth-pub",
       name: "BugSleuth: Unsupervised Bug Localization using Genetic Programming",
       createdAt: "2024-08-02T00:00:00Z",
-      description: "pending research publication on innovative fault localization technique",
-      url: "",
+      description: "Pending research publication on innovative fault localization technique",
+      url: "https://github.com/Ashish-Ramrakhiani/BugLocalization_BugSleuth/",
     },
   ],
 };
@@ -648,7 +535,7 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "animated_ashish.png",
+    profile_image_path: "animated_ashish2.png",
     description:
       "I'm available for software engineering opportunities, research collaborations, and consulting projects. Feel free to reach out for full-time positions, internships, or technical discussions. I respond promptly to all professional inquiries.",
   },
@@ -656,7 +543,7 @@ const contactPageData = {
     title: "Research & Technical Writing",
     subtitle:
       "I share insights from my research in software engineering, machine learning applications, and enterprise system optimization through technical articles and academic publications.",
-    link: "",
+    link: "https://github.com/Ashish-Ramrakhiani/",
     avatar_image_path: "blogs_image.svg",
   },
   addressSection: {
@@ -668,7 +555,7 @@ const contactPageData = {
     postalCode: "97331",
     streetAddress: "Oregon State University",
     avatar_image_path: "address_image.svg",
-    location_map_link: "https://maps.app.goo.gl/oregonstateuniversity",
+    location_map_link:"https://www.google.com/maps/place/Oregon+State+University,+Corvallis,+OR",
   },
   phoneSection: {
     title: "Phone",
@@ -687,7 +574,6 @@ export {
   certifications,
   experience,
   projectsHeader,
-  projects,
   publicationsHeader,
   publications,
   contactPageData,
